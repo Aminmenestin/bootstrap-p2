@@ -20,7 +20,7 @@
 
     <header x-data="{navshow : false}" @scroll.window="navshow = window.scrollY > 100 ? true : false">
         <nav class="header navbar  navbar-expand-lg navbar-light fixed-top" :class=" {'header-scrolled' :navshow} ">
-            <div class="container">
+            <div class="container overflow-hidden">
                 <a class="fw-bold navbar-brand" href="#">Test.ir</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -59,9 +59,9 @@
     <!-- intro -->
 
     <section class="intro d-flex align-items-center overflow-hidden">
-        <div class="container">
-            <div class="row align-items-center mt-5 mt-lg-0">
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="50">
+        <div class="container" data-aos="fade-down" data-aos-delay="50">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
                     <h3 class="fw-bold text-primary text-center text-lg-start mt-5 mt-lg-0">لورم ایپسوم متن ساختگی با
                         تولید سادگی
                         نامفهوم از صنعت چاپ.</h3>
@@ -69,8 +69,8 @@
                     <button type="button" class="hover-grow btn btn-lg btn-primary mt-4 d-flex mx-auto ms-lg-0 ">لورم
                         ایپسوم</button>
                 </div>
-                <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="50">
-                    <img class="img-fluid" src="images/intro/intro-img.png" alt="...">
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <img src="images/intro/intro-img.png" class="img-fluid" alt="...">
                 </div>
             </div>
         </div>
@@ -199,7 +199,7 @@
 
     <!-- features -->
 
-    <section class="features py-5 overflow-hidden">
+    <section class="features py-5 overflow-hidden overflow-hidden">
         <div class="container text-center text-md-start">
             <div class="row mt-5" data-aos="fade-up" data-aos-delay="50">
                 <h4 class="mb-5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</h4>
@@ -348,16 +348,15 @@
     <!-- pricing -->
 
 
-    <section class="pricing overflow-hidden" data-aos-delay="400">
-        <div class="container mt-5">
+    <section class="pricing overflow-hidden">
+        <div class="container my-5">
             <div class="row">
                 <h2 class="fw-bold">قیمت ها</h2>
                 <p>لورم ایپسوم متن ساختگی با تولید سادگی</p>
             </div>
-            <div class="row  mt-lg-3" >
-                <div class="col-md-6 col-lg-3" data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="700">
+            <div class="row  mt-lg-3">
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="700" data-aos-delay="50">
                     <div class="card pricing-hover mt-4 mt-md-4 mt-lg-0">
                         <div class="card-body shadow text-center">
                             <h4 class="pricing-acua fw-bold">پلن رایگان</h4>
@@ -374,7 +373,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="700" data-aos-delay="150">
                     <div class="card pricing-hover mt-5 mt-md-4 mt-lg-0">
                         <div class="card-body shadow text-center">
                             <h4 class="pricing-green fw-bold">پلن اول</h4>
@@ -391,7 +391,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="700" data-aos-delay="250">
                     <div class="card pricing-hover mt-5 mt-lg-0">
                         <div class="card-body shadow text-center">
                             <h4 class="pricing-orange fw-bold">پلن دوم</h4>
@@ -408,7 +409,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="700" data-aos-delay="350">
                     <div class="card pricing-hover mt-5 mt-lg-0">
                         <div class="card-body shadow text-center">
                             <h4 class="pricing-red fw-bold">پلن سوم</h4>
@@ -499,7 +501,7 @@
         </div>
     </section>
 
-
+<!-- footer -->
 
     <footer class="footer mt-5 overflow-hidden">
         <div class="container">
@@ -516,31 +518,44 @@
                     <h5>لینک ها</h5>
                     <hr class="bg-primary">
                     <ul class="list-unstyled footer-links">
-                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i class="d-inline bi bi-chevron-left"></i> <span> صفحه اصلی</span></a></li>
-                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i class="d-inline bi bi-chevron-left"></i> <span>محصولات</span></a></li>
-                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i class="d-inline bi bi-chevron-left"></i> <span>خدمات</span></a></li>
-                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i class="d-inline bi bi-chevron-left"></i> <span>درباره ما</span></a></li>
-                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i class="d-inline bi bi-chevron-left"></i> <span>تماس با ما</span></a></li>
+                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i
+                                    class="d-inline bi bi-chevron-left"></i> <span> صفحه اصلی</span></a></li>
+                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i
+                                    class="d-inline bi bi-chevron-left"></i> <span>محصولات</span></a></li>
+                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i
+                                    class="d-inline bi bi-chevron-left"></i> <span>خدمات</span></a></li>
+                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i
+                                    class="d-inline bi bi-chevron-left"></i> <span>درباره ما</span></a></li>
+                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i
+                                    class="d-inline bi bi-chevron-left"></i> <span>تماس با ما</span></a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-lg-2 ">
                     <h5>خدمات</h5>
                     <hr class="bg-primary">
                     <ul class="list-unstyled footer-links">
-                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i class="d-inline bi bi-chevron-left"></i> <span>لورم ایپسوم</span></a></li>
-                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i class="d-inline bi bi-chevron-left"></i> <span>لورم ایپسوم</span></a></li>
-                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i class="d-inline bi bi-chevron-left"></i> <span>لورم ایپسوم</span></a></li>
-                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i class="d-inline bi bi-chevron-left"></i> <span>لورم ایپسوم</span></a></li>
-                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i class="d-inline bi bi-chevron-left"></i> <span>لورم ایپسوم</span></a></li>
+                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i
+                                    class="d-inline bi bi-chevron-left"></i> <span>لورم ایپسوم</span></a></li>
+                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i
+                                    class="d-inline bi bi-chevron-left"></i> <span>لورم ایپسوم</span></a></li>
+                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i
+                                    class="d-inline bi bi-chevron-left"></i> <span>لورم ایپسوم</span></a></li>
+                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i
+                                    class="d-inline bi bi-chevron-left"></i> <span>لورم ایپسوم</span></a></li>
+                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i
+                                    class="d-inline bi bi-chevron-left"></i> <span>لورم ایپسوم</span></a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-lg-2">
                     <h5>لینک ها</h5>
                     <hr class="bg-primary">
                     <ul class="list-unstyled footer-links">
-                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i class="d-inline bi bi-chevron-left"></i> <span>دباره ما</span></a></li>
-                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i class="d-inline bi bi-chevron-left"></i> <span>لورم ایپسوم</span></a></li>
-                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i class="d-inline bi bi-chevron-left"></i> <span>تماس با ما</span></a></li>
+                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i
+                                    class="d-inline bi bi-chevron-left"></i> <span>دباره ما</span></a></li>
+                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i
+                                    class="d-inline bi bi-chevron-left"></i> <span>لورم ایپسوم</span></a></li>
+                        <li class="mt-2"> <a class="bottom-border test-hover" href="#"><i
+                                    class="d-inline bi bi-chevron-left"></i> <span>تماس با ما</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -548,8 +563,8 @@
         <div class="container-fluid">
             <div class="row text-center footer-bg">
                 <div class="col-lg-12">
-                    <h5 class="fw-bold mt-3">Test.ir</h5>
-                    <p class="pb-3"><a href="#">Amin_menestin &copy;</a></p>
+                    <h5 class="fw-bold">Test.ir</h5>
+                    <p><a href="#">Amin_menestin &copy;</a></p>
                 </div>
             </div>
         </div>
@@ -572,10 +587,10 @@
     <script>
         new PureCounter();
     </script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 
 </html>
